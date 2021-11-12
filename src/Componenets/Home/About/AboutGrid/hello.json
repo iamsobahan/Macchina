@@ -1,0 +1,94 @@
+[{
+
+    "name": "Lamborghini Aventador '2012",
+    "price": 150.000,
+    "location": "Germany",
+    "details": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem",
+ "condition" : "Used",
+    "img": "https://i.ibb.co/DCGPKNh/5f0f7259ae732.jpg"
+},
+
+{
+
+    "name": "Lexus LFA '2014",
+    "price": 310000,
+    "location": "Poland ",
+    "details": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem",
+ "condition" : "New",
+    "img": "https://i.ibb.co/jRSkz44/5f6fbb4f83f4d.jpg"
+},
+{
+
+    "name": "Bugatti Veyron '2013",
+    "price": 2.850000,
+    "location": "Germany  ",
+    "details": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem",
+   "condition" : "Used",
+    "img": "https://i.ibb.co/xFS3b33/53663bcca8f67.jpg"
+},
+{
+
+    "name": "BMW I8 '2013",
+    "price": 5.850000,
+    "location": "Germany  ",
+    "details": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem",
+   "condition" : "Used",
+    "img": "https://i.ibb.co/V3k8zYc/54584487e30d2.jpg"
+},
+{
+
+    "name": "Audi A4 '2016",
+    "price": 2.950000,
+    "location": "Germany",
+    "details": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem",
+   "condition" : "Used",
+    "img": "https://i.ibb.co/31b5tQB/5458406d09a8f.jpg"
+},
+{
+
+    "name": "Audi Quattro '2012",
+    "price": 90.000,
+    "location": "Canada",
+    "details": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem",
+   "condition" : "New",
+    "img": "https://i.ibb.co/wKr4RtB/54584fb337b43.jpg"
+},
+{
+
+    "name": "Bugatti Veyron '2013",
+    "price": 80.000,
+    "location": "American",
+    "details": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem",
+   "condition" : "New",
+    "img": "https://i.ibb.co/tDmHfSv/5458459953eec.jpg"
+},
+{
+
+    "name": "Honda Civic '2013",
+    "price": 50.000,
+    "location": "Canada",
+    "details": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem",
+   "condition" : "Used",
+    "img": "https://i.ibb.co/5xjk7ZB/545850b9c24e9.jpg"
+},
+{
+
+    "name": "Honda NSX '2013",
+    "price": 970.000,
+    "location": "Japan",
+    "details": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem",
+   "condition" : "New",
+    "img": "https://i.ibb.co/dQVQSJn/54584f28d5054.jpg"
+},
+{
+
+    "name": "Mazda Mazda3 '2003",
+    "price": 70.000,
+    "location": "China",
+    "details": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem",
+   "condition" : "New",
+    "img": "https://i.ibb.co/RY24KtP/54584db3bb866.jpg"
+}
+
+]
+

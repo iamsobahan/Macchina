@@ -1,0 +1,5 @@
+.footerBottom {
+  clip-path: polygon(10% 88%, 100% 88%, 100% 100%, 0% 100%);
+  background: #bf2130;
+  height: 20px;
+}
