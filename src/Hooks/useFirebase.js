@@ -8,6 +8,7 @@ import {
   onAuthStateChanged,
   updateProfile,
 } from "firebase/auth";
+import Swal from "sweetalert2";
 
 import { useEffect, useState } from "react";
 import firebaseInit from "../Componenets/Login/Firebase/Firebase.init";
@@ -41,10 +42,12 @@ const useFirebase = () => {
   const createRegister = (email, password, name, history) => {
     setloading(true);
     createUserWithEmailAndPassword(auth, email, password)
-      .then((result) => {
-        const newUser = { email, displayName: name };
+      .then((userCredential) => {
+        if (userCredential.user) {
+          Swal.fire("Good job!", "Registered successfully", "success");
+        }
+
         saveUserToDb(email, name, "POST");
-        setuser(newUser);
 
         updateProfile(auth.currentUser, {
           displayName: name,
@@ -52,7 +55,7 @@ const useFirebase = () => {
           .then(() => {})
           .catch((error) => {});
 
-        history.replace("/");
+        history.replace("/login");
         seterror("");
       })
       .catch((error) => {

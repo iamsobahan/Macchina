@@ -114,12 +114,6 @@ const Login = () => {
                 </Box>
               )}
 
-              {user.email && (
-                <Alert severity="success">
-                  user Login successfully — check it out!
-                </Alert>
-              )}
-
               {usererror && <Alert severity="error">{usererror}</Alert>}
             </Grid>
           </Grid>
