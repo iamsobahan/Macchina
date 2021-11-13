@@ -28,14 +28,23 @@ const Orders = (props) => {
         </Button>
       </TableCell>
       <TableCell align="center">
-        {" "}
-        <Button
-          style={{ background: "green" }}
-          variant="contained"
-          size="small"
-        >
-          {status}
-        </Button>{" "}
+        {status === "pending" ? (
+          <Button
+            style={{ background: "PURPLE" }}
+            variant="contained"
+            size="small"
+          >
+            {status}
+          </Button>
+        ) : (
+          <Button
+            style={{ background: "green" }}
+            variant="contained"
+            size="small"
+          >
+            {status}
+          </Button>
+        )}
       </TableCell>
     </TableRow>
   );

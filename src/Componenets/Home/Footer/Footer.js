@@ -20,7 +20,11 @@ const Footer = () => {
     >
       <Container>
         <img src={footer} alt="" />
-        <Grid style={{ alignItems: "center" }} container spacing={2}>
+        <Grid
+          style={{ alignItems: "center", marginTop: "20px" }}
+          container
+          spacing={2}
+        >
           <Grid item xs={12} sm={8}>
             <Typography
               style={{ textTransform: "uppercase", color: "#BF2130" }}

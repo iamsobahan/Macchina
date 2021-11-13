@@ -1,10 +1,11 @@
-import React from "react";
+import React, { useState } from "react";
 import { TableCell, TableRow, Button } from "@mui/material";
 import Swal from "sweetalert2";
 
 const Manageorder = (props) => {
   const { _id, serial, carName, email, location, quantity, date, status } =
     props.item;
+  const [update, setupdate] = useState(status);
 
   const clickhandler = (id) => {
     fetch(`https://nameless-retreat-70223.herokuapp.com/allorders/${id}`, {
@@ -14,6 +15,7 @@ const Manageorder = (props) => {
       .then((data) => {
         if (data.matchedCount > 0) {
           Swal.fire("Good job!", "Updated order successfully", "success");
+          setupdate("shipped");
         }
       });
   };
@@ -40,15 +42,24 @@ const Manageorder = (props) => {
         </Button>
       </TableCell>
       <TableCell align="center">
-        {" "}
-        <Button
-          onClick={() => clickhandler(_id)}
-          style={{ background: "green" }}
-          variant="contained"
-          size="small"
-        >
-          {status}
-        </Button>{" "}
+        {update === "pending" ? (
+          <Button
+            onClick={() => clickhandler(_id)}
+            style={{ background: "PURPLE" }}
+            variant="contained"
+            size="small"
+          >
+            {update}
+          </Button>
+        ) : (
+          <Button
+            style={{ background: "green" }}
+            variant="contained"
+            size="small"
+          >
+            {update}
+          </Button>
+        )}
       </TableCell>
     </TableRow>
   );

@@ -127,7 +127,7 @@ const Placeorder = () => {
               <form onSubmit={clickhandler}>
                 <Typography
                   style={{ textTransform: "uppercase", marginBottom: "10px" }}
-                  variant="h4"
+                  variant="h5"
                 >
                   Place your order
                 </Typography>
