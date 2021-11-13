@@ -1,10 +1,11 @@
 import { useEffect, useState } from "react";
+import useAuth from "./useAuth";
 
 const useCars = () => {
   const [cars, setcars] = useState([]);
 
   useEffect(() => {
-    fetch("https://nameless-retreat-70223.herokuapp.com/cars")
+    fetch("https://nameless-retreat-70223.herokuapp.com/car")
       .then((res) => res.json())
       .then((data) => setcars(data));
   }, []);

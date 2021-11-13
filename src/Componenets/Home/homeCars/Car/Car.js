@@ -16,7 +16,7 @@ const Car = (props) => {
     history.push(`/cars/${_id}`);
   };
   return (
-    <Grid item xs={12} sm={6} lg={4}>
+    <Grid item xs={12} sm={4}>
       <Card sx={{ maxWidth: 345 }}>
         <CardMedia component="img" alt="green iguana" image={img} />
         <CardContent>

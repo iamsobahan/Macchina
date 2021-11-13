@@ -25,8 +25,9 @@ const Placeorder = () => {
   const [info, setInfo] = useState({});
 
   const emailRef = useRef();
+
   useEffect(() => {
-    fetch(`https://nameless-retreat-70223.herokuapp.com/cars/${id}`)
+    fetch(`https://nameless-retreat-70223.herokuapp.com/car/${id}`)
       .then((res) => res.json())
       .then((data) => setcarInfo(data));
   }, [id]);
@@ -89,8 +90,8 @@ const Placeorder = () => {
                 />
                 <div className="overlay">
                   <div>
-                    <Typography variant="h6">{carInfo.name}</Typography>
-                    <Typography variant="body1">{carInfo.location}</Typography>
+                    <Typography variant="h6">{carInfo?.name}</Typography>
+                    <Typography variant="body1">{carInfo?.location}</Typography>
                     <Box style={{ marginTop: "20px" }}>
                       <FacebookIcon
                         style={{
@@ -138,7 +139,7 @@ const Placeorder = () => {
                       variant="standard"
                       onBlur={blurhandler}
                       name="name"
-                      defaultValue={user?.displayName ? user.displayName : ""}
+                      defaultValue={user?.displayName ? user?.displayName : ""}
                     />
                   </Grid>
                   <Grid item xs={12} md={6}>
@@ -149,7 +150,7 @@ const Placeorder = () => {
                       label="Email"
                       variant="standard"
                       inputRef={emailRef}
-                      defaultValue={user.email}
+                      defaultValue={user?.email}
                     />
                   </Grid>
                   <Grid item xs={12} md={6}>

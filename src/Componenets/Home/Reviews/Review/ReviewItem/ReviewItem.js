@@ -6,7 +6,7 @@ import { Typography } from "@mui/material";
 const ReviewItem = (props) => {
   const { name, rating, details } = props.item;
   return (
-    <Grid item xs={12} sm={6} md={6} lg={4}>
+    <Grid item xs={12} sm={4}>
       <Paper style={{ padding: "20px" }} variant="outlined" square>
         <FormatQuoteIcon style={{ fontSize: "50px" }}></FormatQuoteIcon>
         <Typography

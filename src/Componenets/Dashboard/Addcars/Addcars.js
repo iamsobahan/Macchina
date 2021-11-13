@@ -17,7 +17,7 @@ const Addcars = () => {
   };
 
   const clickhandler = (e) => {
-    fetch("https://nameless-retreat-70223.herokuapp.com/cars", {
+    fetch("https://nameless-retreat-70223.herokuapp.com/car", {
       method: "POST",
       headers: {
         "content-type": "application/json",
