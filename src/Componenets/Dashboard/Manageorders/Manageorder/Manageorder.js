@@ -1,10 +1,22 @@
-import { TableCell, TableRow, Button } from "@mui/material";
 import React from "react";
+import { TableCell, TableRow, Button } from "@mui/material";
+import Swal from "sweetalert2";
 
-const Orders = (props) => {
+const Manageorder = (props) => {
   const { _id, serial, carName, email, location, quantity, date, status } =
     props.item;
 
+  const clickhandler = (id) => {
+    fetch(`https://nameless-retreat-70223.herokuapp.com/allorders/${id}`, {
+      method: "PUT",
+    })
+      .then((res) => res.json())
+      .then((data) => {
+        if (data.matchedCount > 0) {
+          Swal.fire("Good job!", "Updated order successfully", "success");
+        }
+      });
+  };
   return (
     <TableRow sx={{ "&:last-child td, &:last-child th": { border: 0 } }}>
       <TableCell component="th" scope="row">
@@ -30,6 +42,7 @@ const Orders = (props) => {
       <TableCell align="center">
         {" "}
         <Button
+          onClick={() => clickhandler(_id)}
           style={{ background: "green" }}
           variant="contained"
           size="small"
@@ -41,4 +54,4 @@ const Orders = (props) => {
   );
 };
 
-export default Orders;
+export default Manageorder;

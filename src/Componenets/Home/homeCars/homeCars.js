@@ -3,7 +3,6 @@ import { Box } from "@mui/system";
 
 import Car from "./Car/Car";
 import useCars from "./../../../Hooks/useCars";
-import { useState } from "react";
 
 const HomeCars = () => {
   const { cars } = useCars();

@@ -47,6 +47,7 @@ const Placeorder = () => {
       email: email,
       productId: id,
       carName: carInfo.name,
+      status: "pending",
       date: new Date().toLocaleString(),
     };
 
